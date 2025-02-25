@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Наша история отношений</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital.ttf') format("truetype");
+		}
+	</style>
+	<link href="default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="garden.js"></script>
+	<script type="text/javascript" src="functions.js"></script>
+
+</head>
+
+<body>
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments"></span><br/>
+			<span class="comments">  Дорогая Люня,</span><br/>
+			<span class="comments"> Я пишу это сообщение, чтобы поздравить тебя с 8 марта, мы проходим непростой этап, но обязательно справимся.</span><br/>
+			<span class="comments">Я безумно рад, что ты нашла силы меня простить. Спасибо тебе < 3</span><br/>
+			
+			
+			<span class="comments"> 3 мая 2023 года началось наше общение. Перенесемся на 11 июня 2023 года, </span><br/>
+			
+					 <span class="comments"> Ты стала моей девушкой :3  </span><br/>
+		
+																					   <span class="comments">и ты стала моей женой. Говорят, есть такая вещь, как любовь с первого взгляда, и с тобой я почувствовал, что это неоспоримая правда.</span><br/>
+			
+						 <span class="comments"> Почти два года пролетели незаметно, и каждый день я невероятно благодарен тебе.</span><br/>
+			
+			<span class="comments"> Вот небольшой список вещей, которыми мы наслаждались и будем наслаждаться вместе:</span><br/>
+			
+			<span class="comments"> Мы любим смотреть фильмы, сериалы, дорамы, мультфильмы и аниме вместе, это просто ахуеительный и особый вайб, которого я ни с кем не чувствовал ранее.</span><br/>
+			
+			<span class="comments"> Наши прогулки с тобой, это особые путешествия, которые ни с чем не сравнятся. Впереди нас ждет множество мест, которые мы обязательно исследуем вместе.</span><br/>
+			
+			<span class="comments">Мы обсуждаем наши дни, работу и учебу. Ты рассказываешь как весело проводишь время с Никой и другими друзьями. Очень милые факты и истории рассказываешь о своей кошке Сейро.</span><br/>
+			
+						  <span class="comments"> Да, иногда мы расходимся во мнениях, но это нормально, если мы можем решить проблему вместе.</span><br/>
+		
+			<span class="comments">  Ты - моя радость и счастье.</span><br/>
+			
+			
+			<span class="comments"> Ты - любовь всей моей жизни.</span><br/>
+			
+			<span class="comments"> Ты - мой самый сильный наркотик, без которого я не могу жить</span><br/>
+			
+			<span class="comments">Скоро не будет такого расстояния между нами все</span><br/>
+
+			<span class="comments"> и все что я написал выше, мы сможем реализовывать по новому. Изучим разные места, будем проводить время так, как мы мечтали</span><br/>
+
+			<span class="comments">До встречи, моя радость</span><br/>
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					 Люня, я влюблен в тебя целых
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					11:11<br />
+					<div class="signature">-  Краснолюдик aka Чичарон :)</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="copyright">
+		Copyright © 2025 <a href='http://lunaonelove.com'>lunaonelove.com</a>
+	</div>
+</div>
+<script type="text/javascript">
+	var offsetX = $("#loveHeart").width() / 2;
+	var offsetY = $("#loveHeart").height() / 2 - 55;
+	var together = new Date();
+	// 此处月份介于 0 ~ 11 之间。用本地时间表示，如 8 月要用 7 表示。
+		
+
+	if (!document.createElement('canvas').getContext) {
+		var msg = document.createElement("div");
+		msg.id = "errorMsg";
+		msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+		document.body.appendChild(msg);
+		$("#code").css("display", "none")
+		$("#copyright").css("position", "absolute");
+		$("#copyright").css("bottom", "10px");
+		document.execCommand("stop");
+	} else {
+		setTimeout(function () {
+			startHeartAnimation();
+		}, 5000);
+
+	
+		adjustCodePosition();
+		$("#code").typewriter();
+	}
+</script>
+</body>
+</html>
+
+
+	}
+</script>
+</body>
+</html>
