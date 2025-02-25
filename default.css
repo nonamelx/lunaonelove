@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background: #fdc9d1;
-    font-size: 12px;
+    font-size: 16px;
     overflow: auto
 }
 
@@ -57,7 +57,7 @@ body {
 
 #loveu .signature {
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 #clickSound {
@@ -71,7 +71,7 @@ body {
     height: 400px;
     color: #333;
     font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
-    font-size: 12px
+    font-size: 16px
 }
 
 #code .string {
