@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love You</title>
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="page2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>    
+  <div id="drag-container">          
+    <div id="timeSince"></div>
+
+<script>
+function updateTimer() {
+    const startDate = new Date('2023-06-11T00:00:00');  
+    const now = new Date();
+
+    const diff = now - startDate;  
+
+    const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365));
+    const months = Math.floor((diff % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24 * 30));
+    const days = Math.floor((diff % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    document.getElementById('timeSince').innerHTML = 
+        `Мы любим друг друга, целых:<br>
+        ${years} год, ${months} месяцев, ${days} дней, ${hours} часов, ${minutes} минут, ${seconds} секунд`; 
+        
+
+    setTimeout(updateTimer, 1000); 
+}
+
+updateTimer();
+</script>
+
+  </div>
+
+  <div id="canva">
+      <canvas id="canvas"></canvas>
+  </div>
+
+  <script src="page2.js"></script>
+</body>
+</html>
